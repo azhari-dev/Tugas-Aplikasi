@@ -246,5 +246,83 @@ textarea {
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
+.container_foto {
+    margin :auto;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.a1 {
+    margin-top: 30px;
+    }
+.a2 {
+    margin-bottom: 30px;
+}
+
+.a1, .a2 {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.konten2 {
+    margin-bottom: 30px;
+}
+
+.a1,.a2, .konten,.konten2 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+}
+.konten, .konten2 {
+    padding: 20px;
+}
+
+.foto1, .foto2, .foto3, .foto4 {
+    width: 23%;
+    height: 100%;
+    position: relative;
+    max-width: 800px;
+
+}
+
+.container_table {
+    overflow-x: auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tabel {
+    color: #444;
+    border-collapse: collapse;
+}
+.toptabel {
+    background-color: #82d2f1;
+}
+
+#job, #pj,#pjtop, #no {
+    padding-left: 5px 
+}
+#pjtop {
+    text-align: center;
+    padding-right: 5px;
+}
+
+#no {
+    padding: 5px;
+    text-align: center;
+}
+
+#job {
+    width: 300px;
+}
 /* KONTEN RIZAL END */
 
