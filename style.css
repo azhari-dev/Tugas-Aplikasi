@@ -149,6 +149,7 @@ section {
 }
 
 /* KONTEN INDRA START */
+
 /* KONTEN INDRA END */
 
 /*KONTEN AZHARI START  */
@@ -247,6 +248,44 @@ textarea {
 /*KONTEN AZHARI END  */
 
 /* KONTEN MUMTAZ START */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.yes {
+    color: green;
+}
+
+.no {
+    color: red;
+}
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
