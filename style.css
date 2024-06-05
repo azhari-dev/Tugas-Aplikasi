@@ -293,11 +293,21 @@ textarea {
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
-.main-about-us-1,.main-about-us-2,.main-about-us-3 {
+.div {
+    background-color: #E4F4F3;
+    width: 85%;
+    height: 93%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 85px;
+}
+
+.div-about-us-1,.div-about-us-2,.div-about-us-3,.div-about-us-4 {
     display: block;
 }
 
-.main-about-us-1 {
+.div-about-us-1 {
     height: auto;
 }
 
@@ -309,6 +319,8 @@ textarea {
     /* background-color: cyan; */
     font-size: 60px;
     text-shadow: 4px 3px 0px #7A7A7A, 4px 4px 0px rgba(19,100,139,0.42);
+    margin-bottom: 40px;
+    margin-top: 25px;
 }
 
 .desc,.desc-kel {
@@ -403,7 +415,7 @@ box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0p
 .toptabel {
     background-color: #71D5E4;
 }
-#mid-tab {
+.mid-tab {
     margin:auto;
 }
 
@@ -411,19 +423,18 @@ tr,td {
     padding-left: 5px
 }
 
-#right-tab-top,#mid-tab-top,#left-tab-top {
+.right-tab-top,.mid-tab-top,.left-tab-top {
     text-align: center;
     padding: 10px;
 }
 
-#left-tab {
+.left-tab {
     padding: 5px;
     text-align: center;
 }
 
-#mid-tab {
+.mid-tab {
     width: 300px;
 }
-
 
 /* KONTEN RIZAL END */
