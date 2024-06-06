@@ -444,10 +444,12 @@ textarea {
 
 .yes {
     color: green;
+    border: 1px solid #ddd;
 }
 
 .no {
     color: red;
+    border: 1px solid #ddd;
 }
 /* KONTEN MUMTAZ END */
 
