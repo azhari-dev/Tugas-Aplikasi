@@ -191,6 +191,84 @@ section {
 }
 
 /* KONTEN INDRA START */
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.i {
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 10%;
+
+
+}
+
+.card1 {
+    border-radius: 15px;
+    background-image: url("aset/polir 5.jpg");
+    width: 30%;
+    color: white;
+}
+
+.card2 {
+    border-radius: 15px;
+    background-image: url("aset/polir 4.jpg");
+    width: 30%;
+    color: white;
+}
+
+.pengertian {
+
+}
+
+.sejarah {
+    display: flex;
+}
+
+.spolo {
+    margin-right: 15px;
+}
+
+
+.sprsi {
+    margin-right: 15px;
+}
+
+.ketentuan {
+    display: flex;
+}
+
+.syarat {
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.aturan {
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.list1 {
+    
+}
+
+.list2 {
+    margin-left: 20px;
+}
+
+.gambar {
+    text-align: center;
+
+}
 /* KONTEN INDRA END */
 
 /*KONTEN AZHARI START  */
