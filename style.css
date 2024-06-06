@@ -408,6 +408,47 @@ textarea {
 /*KONTEN AZHARI END  */
 
 /* KONTEN MUMTAZ START */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menengah_h1{
+    text-align: center;
+    color: #333;
+}
+
+.ukuran{
+    width: 100%;
+}
+
+.kotak {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.garis{
+    border: 1px solid #ddd;
+}
+
+.garis, th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+.warna_th {
+    background-color: #71D5E4;
+}
+
+.yes {
+    color: green;
+}
+
+.no {
+    color: red;
+}
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
