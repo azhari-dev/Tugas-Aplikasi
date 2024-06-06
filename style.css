@@ -1,5 +1,5 @@
-@font-face { /*Ekstrak file eksternal font*/
-    font-family: 'Poppins',sans-serif;
+@font-face {
+    font-family: 'Poppins';
     src: url(font/Poppins-Medium.ttf);
 }
 
@@ -41,7 +41,7 @@ aside {
 /* merge property end */
 
 /* menu start */
-menu {
+.menu {
     background-color: #00B6BC;
     height: 12%;
     display: flex;
@@ -117,6 +117,19 @@ aside {
     justify-content: space-evenly;
 }
 
+.logo1,
+.logo2 {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apalah {
+    text-align: center;
+}
+
 aside img {
     width: 50%;
 }
@@ -124,14 +137,40 @@ aside img {
 /* aside end */
 
 /* main start */
-main {
+
+.main {
     background-color: #E4F4F3;
     width: 85%;
-    height: 93%;
     float: right;
     display: flex;
     flex-direction: column;
-    padding-top: 85px;
+}
+
+.main-banner {
+    background-image: url(aset/banner.png);
+    filter: blur(2.5px);
+    width: 85%;
+    height: 88%;
+    float: right;
+    margin-top: 85px;
+}
+
+.bg-text {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
+
+.bg-text h1 {
+    margin: auto;
+    font-size: 100px;
+    text-shadow: 5px 4px 0px #a3a3a3, 4px 4px 0px rgba(19, 100, 139, 0.42);
+    color: white;
+}
+
+.main-form {
+    height: 83%;
+    padding-top: 20px;
 }
 
 /* main end */
@@ -152,11 +191,10 @@ section {
 }
 
 /* KONTEN INDRA START */
-
 /* KONTEN INDRA END */
 
 /*KONTEN AZHARI START  */
-main h1 {
+.main h1 {
     font-size: 20px;
     margin-top: 20px;
 }
@@ -164,40 +202,69 @@ main h1 {
 form {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-top: 15px;
+    width: 65%;
+    margin-top: 20px;
 }
 
 .row {
     display: flex;
-    padding: 5px;
 }
 
 .each-column {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.input {
+    background-color: #71D5E4;
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid #E4F4F3;
+}
+
+.each-column input:focus {
+    outline: 0;
+}
+
+.success input,
+.success .fill-dif-column,
+.success .valid-column {
+    border-color: #0084ff;
+}
+
+.error input,
+.error .fill-dif-column,
+.error .valid-column {
+    border-color: red;
+}
+
+.textError {
+    display: flex;
+    height: 13px;
+    align-items: center;
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.textError img {
+    width: 12px;
+    margin-right: 5px;
 }
 
 label {
     font-weight: 500;
 }
 
-.input {
-    background-color: #71D5E4;
-    height: 35px;
-    padding: 5px 25px;
-    border-radius: 10px;
-    border: none;
-}
-
 textarea {
     background-color: #71D5E4;
-    border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    border: none;
 }
 
 .each-column button {
@@ -211,16 +278,21 @@ textarea {
     color: #E4F4F3;
 }
 
+.each-column button:hover {
+    background-color: #38c3c8;
+}
+
 .dif-column {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px 15px 5px;
+    padding-top: 10px;
     margin: auto;
     margin-left: 0;
     width: 100%;
-    border-radius: 10px;
-    margin-top: 5px;
+    /* border-radius: 10px; */
+    /* margin-top: 5px; */
+    /* background-color: greenyellow; */
 }
 
 .fill-dif-column {
@@ -230,17 +302,19 @@ textarea {
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    border: 2px solid #E4F4F3;
 }
 
 .valid-column {
     background-color: #71D5E4;
     padding: 10px;
-    width: 99%;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    border: 2px solid #E4F4F3;
 }
 
 .valid-column a {
@@ -248,102 +322,28 @@ textarea {
     color: rgb(47, 47, 255);
 }
 
+.row-valid {
+    margin: 10px 0;
+}
+
 /*KONTEN AZHARI END  */
 
 /* KONTEN MUMTAZ START */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.menengah_h1{
-    text-align: center;
-    color: #333;
-}
-
-.ukuran{
-    width: 100%;
-}
-
-.kotak {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.garis{
-    border: 1px solid #ddd;
-}
-
-.garis, th, td{
-    padding: 10px;
-    text-align: left;
-}
-
-.warna_th {
-    background-color: #f4f4f4;
-}
-
-.yes {
-    color: green;
-}
-
-.no {
-    color: red;
-}
-
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
 .div {
-    background-color: #E4F4F3;
-    width: 85%;
-    height: 93%;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    padding-top: 85px;
-}
-
-.div-about-us-1,.div-about-us-2,.div-about-us-3,.div-about-us-4 {
     display: block;
-}
-
-.div-about-us-1 {
-    height: auto;
-}
-
-.team {
-    font-family: Cambria;
-    display:flex;
-    justify-content :center;
-    align-items :center;
-    /* background-color: cyan; */
-    font-size: 60px;
-    text-shadow: 4px 3px 0px #7A7A7A, 4px 4px 0px rgba(19,100,139,0.42);
-    margin-bottom: 40px;
-    margin-top: 25px;
-}
-
-.desc,.desc-kel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: Cambria;
-}
-.desc-kel {
-    font-weight: 900;
-    opacity: .8;
 }
 
 .container_foto {
     margin: auto;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+
 }
 
 .a1 {
@@ -356,11 +356,9 @@ textarea {
 
 .a1,
 .a2 {
-    width: 10%;
+    width: 100%;
     vertical-align: middle;
-    
 }
-
 
 .konten2 {
     margin-bottom: 30px;
@@ -393,50 +391,45 @@ textarea {
     height: 100%;
     position: relative;
     max-width: 800px;
+
 }
 
 .container_table {
     overflow-x: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .tabel {
     color: #444;
     border-collapse: collapse;
-    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, rgba(0,0,0,0);
-}
-.tabel,td,th {
-    border : 1px solid black;
 }
 
 .toptabel {
-    background-color: #71D5E4;
-}
-.mid-tab {
-    margin:auto;
+    background-color: #82d2f1;
 }
 
-tr,td {
+#job,
+#pj,
+#pjtop,
+#no {
     padding-left: 5px
 }
 
-.right-tab-top,.mid-tab-top,.left-tab-top {
+#pjtop {
     text-align: center;
-    padding: 10px;
+    padding-right: 5px;
 }
 
-.left-tab {
+#no {
     padding: 5px;
     text-align: center;
 }
 
-.mid-tab {
+#job {
     width: 300px;
 }
 
