@@ -148,6 +148,7 @@ aside img {
 
 .main-banner {
     background-image: url(aset/banner.png);
+    backgorund-repeat:no-repeat;
     filter: blur(2.5px);
     width: 85%;
     height: 88%;
