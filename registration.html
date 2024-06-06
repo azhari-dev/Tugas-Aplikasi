@@ -10,7 +10,7 @@
 
 <body>
     <!-- menu start -->
-    <menu>
+    <div class="menu">
         <div class="nav1">
             <img src="aset/logowpcfix.png" alt="">
             <p>NAMA KELOMPOK</p>
@@ -21,51 +21,74 @@
             <a href="evaluation.html">Evaluasi</a>
             <a href="about-us.html">Tentang Kami</a>
         </div>
-    </menu>
+    </div>
     <!-- menu end -->
     <!-- aside start -->
     <aside>
-        <img src="aset/logolokal.png" alt="">
-        <img src="aset/logoworld.png" alt="">
+        <div class="logo1">
+            <img src="aset/logolokal.png" alt="">
+            <div class="apalah">
+                <div>AKUATIK</div>
+                <div>INDONESIA</div>
+            </div>
+        </div>
+        <div class="logo2">
+            <img src="aset/logoworld.png" alt="">
+            <div class="apalah">
+                <div>WORLD</div>
+                <div>ACUATICS</div>
+            </div>
+        </div>
     </aside>
     <!-- aside end -->
     <!-- main start -->
-    <main>
+    <div class="main main-banner"></div>
+    <div class="bg-text">
+        <h1>WPC</h1>
+    </div>
+    <div class="main main-form">
         <section>
             <h1>FORM REGISTRASI</h1>
-            <form action="#">
+            <form action="#" id="form">
                 <div class="row">
                     <div class="each-column">
                         <label for="namaTim">Nama Tim :</label>
                         <input class="input" type="text" name="namaTim" id="namaTim"
                             placeholder="Masukkan nama tim Anda">
+                        <div class="textError"></div>
                     </div>
                     <div class="each-column">
                         <label for="nama">Nama Kapten :</label>
                         <input class="input" type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap">
+                        <div class="textError"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="each-column">
                         <label for="mail">Email :</label>
                         <input class="input" type="text" name="mail" id="mail" placeholder="email@gmail.com">
+                        <div class="textError"></div>
                     </div>
                     <div class="each-column">
                         <label for="wa">No. Whatsapp :</label>
                         <input class="input" type="text" name="wa" id="wa" placeholder="087799953537">
+                        <div class="textError"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="dif-column">
-                        <label for="gender">Jenis Kelamin :</label>
-                        <div class="fill-dif-column">
-                            <label for="men">Men</label>
-                            <input type="radio" name="gender" id="men">
+                    <div class="each-column">
+                        <div class="dif-column" id="gender">
+                            <label>Jenis Kelamin :</label>
+                            <div class="fill-dif-column">
+                                <label for="men">Pria</label>
+                                <input type="radio" name="gender" id="men" />
+                            </div>
+                            <div class="fill-dif-column">
+                                <label for="women">Wanita</label>
+                                <input type="radio" name="gender" id="women" />
+                            </div>
                         </div>
-                        <div class="fill-dif-column">
-                            <label for="women">Women</label>
-                            <input type="radio" name="gender" id="women">
-                        </div>
+                        <div class="textError" style="margin-left: 140px;"></div>
                     </div>
                     <div class="each-column">
                         <label for="kategori">Kategori :</label>
@@ -84,28 +107,32 @@
                             rows="4"></textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="valid-column">
-                        <label for="persetujuan">Pastikan anda telah membaca dan menyetujui
-                            <a href="#">persyaratan</a>
-                            lomba kami
-                        </label>
-                        <input type="checkbox" name="persetujuan" id="persetujuan">
+                <div class="row-valid">
+                    <div class="each-column">
+                        <div class="valid-column" id="setuju">
+                            <label for="persetujuan">Pastikan anda telah membaca dan menyetujui
+                                <a href="#">persyaratan</a>
+                                lomba kami
+                            </label>
+                            <input type="checkbox" name="persetujuan" id="persetujuan">
+                        </div>
+                        <div class="textError"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="each-column">
-                        <button class="input" type="submit">Kirim</button>
+                        <button class="input button" type="submit">Kirim</button>
                     </div>
                 </div>
             </form>
         </section>
-    </main>
+    </div>
     <!-- footer start -->
     <footer>
 
     </footer>
     <!-- footer end -->
+    <script src="script.js"></script>
 </body>
 
 </html>
