@@ -457,10 +457,13 @@ textarea {
 .div {
     background-color: #E4F4F3;
     width: 85%;
-    height: 93%;
+    height: 90%;
     float: right;
     display: flex;
     flex-direction: column;
+}
+
+.div-about-us-1{
     padding-top: 85px;
 }
 
@@ -468,9 +471,10 @@ textarea {
     display: block;
 }
 
-.div-about-us-1 {
+.div-about-us-1,.div-about-us-3,.div-about-us-4 {
     height: auto;
 }
+
 
 .team {
     display:flex;
@@ -488,7 +492,6 @@ textarea {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: Cambria;
 }
 .desc-kel {
     font-weight: 900;
@@ -552,14 +555,17 @@ textarea {
     max-width: 800px;
 }
 
+.div-about-us-3 .team {
+    /* background-color: #0084ff; */
+    margin-top: 100px;
+}
+
 .container_table {
     overflow-x: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .tabel {
