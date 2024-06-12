@@ -428,7 +428,10 @@ textarea {
 
 /*KONTEN AZHARI END  */
 
+
 /* KONTEN MUMTAZ START */
+
+/*Mengatur isi dari content*/
 .container {
     width: 80%;
     margin: 0 auto;
@@ -437,23 +440,21 @@ textarea {
 
 .menengah_h1{
     text-align: center;
-    color: #333;
 }
 
-.ukuran{
-    width: 100%;
-}
-
+/*Untuk mengatur table*/
 .kotak {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
+/*Untuk border pada table*/
 .garis{
     border: 1px solid #ddd;
 }
 
+/*Mengatur jarak dan align pada isi table*/
 .garis, th, td{
     padding: 10px;
     text-align: left;
@@ -461,6 +462,11 @@ textarea {
 
 .warna_th {
     background-color: #71D5E4;
+}
+
+/*Untuk menghilangkan simbol pada list*/
+.list_hilang{
+    list-style: none;
 }
 
 .yes {
@@ -473,6 +479,7 @@ textarea {
     border: 1px solid #ddd;
 }
 /* KONTEN MUMTAZ END */
+
 
 /* KONTEN RIZAL START */
 .div {
