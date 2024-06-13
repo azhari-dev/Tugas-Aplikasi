@@ -86,6 +86,7 @@ aside {
     color: black;
     border-radius: 10px;
     padding: 5px 20px;
+    transition: .3s;
 }
 
 .nav2 a:hover {
@@ -96,8 +97,41 @@ aside {
     transition: .3s;
 }
 
-
 /* menu end */
+
+/* header start */
+.header {
+    background-color: #E4F4F3;
+    width: 85%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-image: url(aset/banner.png);
+    background-repeat: no-repeat;
+    filter: blur(2.5px);
+    width: 85%;
+    height: 88%;
+    float: right;
+    margin-top: 85px;
+}
+
+.bg-text {
+    position: absolute;
+    top: 42%;
+    left: 19%;
+}
+
+.bg-text h1 {
+    margin: auto;
+    font-size: 100px;
+    text-shadow: 5px 4px 0px #a3a3a3, 4px 4px 0px rgba(19, 100, 139, 0.42);
+    color: white;
+}
+
+/* header start */
 
 /* aside start */
 aside {
@@ -126,7 +160,7 @@ aside {
     align-items: center;
 }
 
-.apalah {
+.textLogo {
     text-align: center;
 }
 
@@ -137,36 +171,12 @@ aside img {
 /* aside end */
 
 /* main start */
-
 .main {
     background-color: #E4F4F3;
     width: 85%;
     float: right;
     display: flex;
     flex-direction: column;
-}
-
-.main-banner {
-    background-image: url(aset/banner.png);
-    backgorund-repeat:no-repeat;
-    filter: blur(2.5px);
-    width: 85%;
-    height: 88%;
-    float: right;
-    margin-top: 85px;
-}
-
-.bg-text {
-    position: absolute;
-    top: 42%;
-    left: 19%;
-}
-
-.bg-text h1 {
-    margin: auto;
-    font-size: 100px;
-    text-shadow: 5px 4px 0px #a3a3a3, 4px 4px 0px rgba(19, 100, 139, 0.42);
-    color: white;
 }
 
 .main-form {
@@ -178,9 +188,13 @@ aside img {
 
 /* footer start */
 footer {
-    background-color: #71D5E4;
+    /* background-color: #71D5E4; */
+    background-color: #00B6BC;
     height: 7%;
     clear: both;
+    display: flex;
+    align-items: center;
+    padding-left: 44%;
 }
 
 /* footer end */
@@ -193,6 +207,10 @@ section {
 
 /* KONTEN INDRA START */
 /*untuk heading*/
+p {
+    text-align: justify;
+}
+
 h2 {
     color: black;
     text-align: center;
@@ -202,108 +220,173 @@ h3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
+
 /*untuk tombol*/
-.card{
+.card {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto 0 auto;
+}
 
+.card a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
+.card1:hover,
+.card2:hover {
+    transition: .2s;
+    filter: grayscale(0);
 }
 
 .card1 {
     border-radius: 15px;
     background-image: url("aset/gambar-polir-4.jpg");
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(.7);
+    width: 35%;
+    background-size: 100%;
+    background-position: 100%;
+    transition: .2s;
 }
 
 .card2 {
     border-radius: 15px;
     background-image: url("aset/gambar-polir-5.jpg");
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    filter: grayscale(.7);
+    width: 35%;
+    transition: .2s;
 }
+
 /*untuk informasi(pengertian)*/
 .pengertian {
     text-align: justify;
-    margin: 10px;
+    padding-top: 70px;
+    width: 90%;
+    margin: auto;
 }
+
 /*untuk sejarah polo air dunia&PRSI*/
 .sejarah {
     display: flex;
-    margin: 10px;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
 .spolo {
     padding-right: 10px;
-    width: 55%;
+    width: 47%;
 }
-
 
 .sprsi {
-    width: 45%;
+    width: 47%;
 }
+
 /*untuk cara bermain*/
 .penghubung {
     display: flex;
     margin: 10px;
-    background-image: url("aset/gambar-polir-1.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50% 100%;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
 .cara {
-    width: 50%;
-    padding: 10px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
 }
+
+.cara img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
 /*untuk lomba*/
 .kata2 {
-    margin: 10px;
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
 }
+
 /*untuk ketentuan lomba*/
 .ketentuan {
     display: flex;
-    margin: 10px;
-    background-image: url("aset/gambar-polir-2.jpg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 58% 40%;
+    width: 90%;
+    margin: 0px auto 30px auto;
+    justify-content: space-between;
 }
+
+.ketentuan ol li {
+    text-align: justify;
+}
+
 /*untuk syarat lomba*/
 .syarat {
-    margin-left: 25px;
-    margin-right: 15px;
-}
-/*untuk atruran lomba*/
-.aturan {
-    margin-left: 25px;
-    margin-right: 15px;
-}
-
-.list1 {
-    
-}
-
-.list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47%;
     margin-left: 20px;
 }
+
+.syarat img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+/*untuk atruran lomba*/
+.aturan {
+    width: 47%;
+    margin-left: 20px;
+    /* background-color: #0084ff; */
+    text-align: center;
+}
+
+.aturan a {
+    background-color: #00B6BC;
+    text-decoration: none;
+    color: #E4F4F3;
+    padding: 10px 70px;
+    border-radius: 10px;
+}
+
+.aturan a:hover {
+    background-color: #22a3a8;
+}
+
+.aturan .list1{
+    margin-bottom: 50px;
+}
+
 /* KONTEN INDRA END */
 
 /*KONTEN AZHARI START  */
-.main h1 {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
 form {
     display: flex;
     flex-direction: column;
     width: 65%;
     margin-top: 20px;
+}
+
+section h2 {
+    font-size: 24px;
 }
 
 .row {
@@ -379,7 +462,8 @@ textarea {
 }
 
 .each-column button:hover {
-    background-color: #38c3c8;
+    background-color: #22a3a8;
+    cursor: pointer;
 }
 
 .dif-column {
@@ -390,9 +474,6 @@ textarea {
     margin: auto;
     margin-left: 0;
     width: 100%;
-    /* border-radius: 10px; */
-    /* margin-top: 5px; */
-    /* background-color: greenyellow; */
 }
 
 .fill-dif-column {
@@ -428,7 +509,6 @@ textarea {
 
 /*KONTEN AZHARI END  */
 
-
 /* KONTEN MUMTAZ START */
 
 /*Mengatur isi dari content*/
@@ -438,7 +518,7 @@ textarea {
     padding: 20px;
 }
 
-.menengah_h1{
+.menengah_h1 {
     text-align: center;
 }
 
@@ -450,12 +530,14 @@ textarea {
 }
 
 /*Untuk border pada table*/
-.garis{
+.garis {
     border: 1px solid #ddd;
 }
 
 /*Mengatur jarak dan align pada isi table*/
-.garis, th, td{
+.garis,
+th,
+td {
     padding: 10px;
     text-align: left;
 }
@@ -465,21 +547,22 @@ textarea {
 }
 
 /*Untuk menghilangkan simbol pada list*/
-.list_hilang{
+.list_hilang {
     list-style: none;
 }
 
 .yes {
     color: green;
     border: 1px solid #ddd;
+    text-align: center;
 }
 
 .no {
     color: red;
     border: 1px solid #ddd;
 }
-/* KONTEN MUMTAZ END */
 
+/* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
 .div {
@@ -491,36 +574,43 @@ textarea {
     flex-direction: column;
 }
 
-.div-about-us-1{
+.div-about-us-1 {
     padding-top: 85px;
 }
 
-.div-about-us-1,.div-about-us-2,.div-about-us-3,.div-about-us-4 {
+.div-about-us-1,
+.div-about-us-2,
+.div-about-us-3,
+.div-about-us-4 {
     display: block;
 }
 
-.div-about-us-1,.div-about-us-3,.div-about-us-4 {
+.div-about-us-1,
+.div-about-us-3,
+.div-about-us-4 {
     height: auto;
 }
 
 
 .team {
-    display:flex;
-    justify-content :center;
-    align-items :center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: cyan; */
     font-size: 60px;
-    text-shadow: 6px 3px 0px #7A7A7A, 4px 4px 0px rgba(19,100,139,0.42);
+    text-shadow: 6px 3px 0px #7A7A7A, 4px 4px 0px rgba(19, 100, 139, 0.42);
     margin-bottom: 40px;
     margin-top: 25px;
 }
 
-.desc,.desc-kel {
+.desc,
+.desc-kel {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 }
+
 .desc-kel {
     font-weight: 900;
     opacity: .8;
@@ -546,7 +636,7 @@ textarea {
 .a2 {
     width: 10%;
     vertical-align: middle;
-    
+
 }
 
 
@@ -599,25 +689,32 @@ textarea {
 .tabel {
     color: #444;
     border-collapse: collapse;
-    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, rgba(0,0,0,0);
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, rgba(0, 0, 0, 0);
 }
-.tabel,td,th {
-    border : 1px solid black;
+
+.tabel,
+td,
+th {
+    border: 1px solid black;
 }
 
 .toptabel {
     background-color: #71D5E4;
 }
+
 .mid-tab {
-    margin:auto;
+    margin: auto;
 }
 
-tr,td {
+tr,
+td {
     padding-left: 5px
 }
 
-.right-tab-top,.mid-tab-top,.left-tab-top {
+.right-tab-top,
+.mid-tab-top,
+.left-tab-top {
     text-align: center;
     padding: 10px;
 }
@@ -631,10 +728,10 @@ tr,td {
     width: 300px;
 }
 
-.mid-tab a{
-    text-decoration:none;
-    color:black;
-    font-weight:300;
+.mid-tab a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
 }
 
 /* KONTEN RIZAL END */
