@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WPC adalah kompetisi polo air bergengsi yang ada di Indonesia">
     <title>TUGAS APLIKASI</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,12 @@
 <body>
     <!-- menu start -->
     <div class="menu">
+        <!-- menu navbar kiri -->
         <div class="nav1">
             <img src="aset/logowpcfix.png" alt="">
-            <p>NAMA KELOMPOK</p>
+            <p>DPW2023-2-A03</p>
         </div>
+        <!-- menu navbar kanan -->
         <div class="nav2">
             <a href="index.html">Beranda</a>
             <a href="#">Registrasi</a>
@@ -23,18 +26,26 @@
         </div>
     </div>
     <!-- menu end -->
+
+    <!-- header start -->
+    <div class="header banner"></div>
+    <div class="bg-text">
+        <h1>Water Polo Competition</h1>
+    </div>
+    <!-- header end -->
+
     <!-- aside start -->
     <aside>
         <div class="logo1">
             <img src="aset/logolokal.png" alt="">
-            <div class="apalah">
+            <div class="textLogo">
                 <div>AKUATIK</div>
                 <div>INDONESIA</div>
             </div>
         </div>
         <div class="logo2">
             <img src="aset/logoworld.png" alt="">
-            <div class="apalah">
+            <div class="textLogo">
                 <div>WORLD</div>
                 <div>ACUATICS</div>
             </div>
@@ -42,47 +53,57 @@
     </aside>
     <!-- aside end -->
     <!-- main start -->
-    <div class="main main-banner"></div>
-    <div class="bg-text">
-        <h1>WPC</h1>
-    </div>
     <div class="main main-form">
         <section>
-            <h1>FORM REGISTRASI</h1>
-            <form action="#" id="form">
+            <h2 id="regis">FORM REGISTRASI</h2>
+            <form action="evaluation.html" id="form">
+                <!-- baris 1 (nama tim & nama kapten) -->
                 <div class="row">
+                    <!-- kolom 1 (nama tim) -->
                     <div class="each-column">
                         <label for="namaTim">Nama Tim :</label>
                         <input class="input" type="text" name="namaTim" id="namaTim"
                             placeholder="Masukkan nama tim Anda">
                         <div class="textError"></div>
                     </div>
+                    <!-- kolom 2 (nama kapten) -->
                     <div class="each-column">
                         <label for="nama">Nama Kapten :</label>
                         <input class="input" type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap">
                         <div class="textError"></div>
                     </div>
                 </div>
+                <!-- baris 2 (email & no. whatsapp) -->
                 <div class="row">
+                    <!-- kolom 1 (email) -->
                     <div class="each-column">
                         <label for="mail">Email :</label>
                         <input class="input" type="text" name="mail" id="mail" placeholder="email@gmail.com">
                         <div class="textError"></div>
                     </div>
+                    <!-- kolom 2 (no. Whatsapp) -->
                     <div class="each-column">
                         <label for="wa">No. Whatsapp :</label>
                         <input class="input" type="text" name="wa" id="wa" placeholder="087799953537">
+                        <!-- <div class="no">
+                            <span>+62</span>
+                            <input class="input" type="text" name="wa" id="wa" placeholder="087799953537">
+                        </div> -->
                         <div class="textError"></div>
                     </div>
                 </div>
+                <!-- baris 3 (jenis kelamin & kategori) -->
                 <div class="row">
+                    <!-- kolom 1 (jenis kelamin) -->
                     <div class="each-column">
                         <div class="dif-column" id="gender">
                             <label>Jenis Kelamin :</label>
+                            <!-- gender pria -->
                             <div class="fill-dif-column">
                                 <label for="men">Pria</label>
                                 <input type="radio" name="gender" id="men" />
                             </div>
+                            <!-- gender wanita -->
                             <div class="fill-dif-column">
                                 <label for="women">Wanita</label>
                                 <input type="radio" name="gender" id="women" />
@@ -90,6 +111,7 @@
                         </div>
                         <div class="textError" style="margin-left: 140px;"></div>
                     </div>
+                    <!-- kolom 2 (kategori) -->
                     <div class="each-column">
                         <label for="kategori">Kategori :</label>
                         <select class="input" name="kategori" id="kategori">
@@ -100,6 +122,7 @@
                         </select>
                     </div>
                 </div>
+                <!-- baris 4 (kolom pertanyaan) -->
                 <div class="row">
                     <div class="each-column">
                         <label for="qna">Ada Pertanyaan?</label>
@@ -107,11 +130,12 @@
                             rows="4"></textarea>
                     </div>
                 </div>
+                <!-- baris 5 (persetujuan) -->
                 <div class="row-valid">
                     <div class="each-column">
                         <div class="valid-column" id="setuju">
                             <label for="persetujuan">Pastikan anda telah membaca dan menyetujui
-                                <a href="#">persyaratan</a>
+                                <a href="index.html#informasi-lomba" target="blank">persyaratan</a>
                                 lomba kami
                             </label>
                             <input type="checkbox" name="persetujuan" id="persetujuan">
@@ -119,6 +143,7 @@
                         <div class="textError"></div>
                     </div>
                 </div>
+                <!-- baris 6 (button) -->
                 <div class="row">
                     <div class="each-column">
                         <button class="input button" type="submit">Kirim</button>
@@ -129,7 +154,7 @@
     </div>
     <!-- footer start -->
     <footer>
-
+        <p>WPC © 2024, made with ❤️ by DPW2023-2-A03</p>
     </footer>
     <!-- footer end -->
     <script src="script.js"></script>
