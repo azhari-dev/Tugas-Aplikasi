@@ -631,4 +631,10 @@ tr,td {
     width: 300px;
 }
 
+.mid-tab a{
+    text-decoration:none;
+    color:black;
+    font-weight:300;
+}
+
 /* KONTEN RIZAL END */
