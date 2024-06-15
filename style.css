@@ -560,7 +560,9 @@ td {
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
-.div {
+
+/* Untuk setiap class yang awalannya div */
+.div { 
     background-color: #E4F4F3;
     width: 85%;
     height: 90%;
@@ -568,11 +570,12 @@ td {
     display: flex;
     flex-direction: column;
 }
-
+/* padding ke header agar tidak menumpuk */
 .div-about-us-1 {
     padding-top: 85px;
 }
 
+/* agar tiap class div berubah ke baris baru */
 .div-about-us-1,
 .div-about-us-2,
 .div-about-us-3,
@@ -580,13 +583,14 @@ td {
     display: block;
 }
 
+/* menyesuaikan tinggi konten */
 .div-about-us-1,
 .div-about-us-3,
 .div-about-us-4 {
     height: auto;
 }
 
-
+/* Hiasan untuk kalimat di class team */
 .team {
     display: flex;
     justify-content: center;
@@ -597,6 +601,7 @@ td {
     margin-bottom: 40px;
     margin-top: 25px;
 }
+
 
 .desc,
 .desc-kel {
@@ -669,6 +674,7 @@ td {
 }
 
 .div-about-us-3 .team {
+    /* background-color: #0084ff; */
     margin-top: 100px;
 }
 
@@ -707,6 +713,7 @@ td {
 }
 
 .right-tab-top,
+.mid2-tab-top,
 .mid-tab-top,
 .left-tab-top {
     text-align: center;
@@ -720,6 +727,10 @@ td {
 
 .mid-tab {
     width: 300px;
+}
+
+.mid2-tab img {
+    width: 100px;
 }
 
 .mid-tab a {
