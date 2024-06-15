@@ -21,25 +21,6 @@ body {
     width: 100%;
 }
 
-/* merge property start */
-/* .nav1,
-.nav2,
-aside {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-
-/* menu,
-.dif-column,
-.fill-dif-column {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* merge property end */
-
 /* menu start */
 .menu {
     background-color: #00B6BC;
@@ -79,11 +60,19 @@ aside {
     list-style: none;
 }
 
+.now-page {
+    color: #00B6BC;
+    background-color: black;
+}
+
+.other-page {
+    color: black;
+}
+
 .nav2 a {
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
     border-radius: 10px;
     padding: 5px 20px;
     transition: .3s;
@@ -131,14 +120,11 @@ aside {
     color: white;
 }
 
-/* header start */
+/* header end */
 
 /* aside start */
 aside {
     background-color: rgba(161, 219, 241, 0.5);
-    /* background-color: #A1DBF1; */
-    /* height: 81%; */
-    /* height: 100%; */
     top: 0;
     bottom: 0;
     float: left;
@@ -188,7 +174,6 @@ aside img {
 
 /* footer start */
 footer {
-    /* background-color: #71D5E4; */
     background-color: #00B6BC;
     height: 7%;
     clear: both;
@@ -371,7 +356,7 @@ h3 {
     background-color: #22a3a8;
 }
 
-.aturan .list1{
+.aturan .list1 {
     margin-bottom: 50px;
 }
 
@@ -408,17 +393,21 @@ section h2 {
     border: 2px solid #E4F4F3;
 }
 
-.each-column input:focus {
+.each-column input:focus,
+textarea {
     outline: 0;
 }
 
 .success input,
+.success textarea,
 .success .fill-dif-column,
 .success .valid-column {
     border-color: #0084ff;
 }
 
+/* text errror */
 .error input,
+.error textarea,
 .error .fill-dif-column,
 .error .valid-column {
     border-color: red;
@@ -447,7 +436,8 @@ textarea {
     background-color: #71D5E4;
     border-radius: 10px;
     padding: 10px 15px;
-    border: none;
+    border: 2px solid #E4F4F3;
+    /* border: none; */
 }
 
 .each-column button {
@@ -505,6 +495,11 @@ textarea {
 
 .row-valid {
     margin: 10px 0;
+}
+
+
+.nomor input {
+    width: 91%;
 }
 
 /*KONTEN AZHARI END  */
@@ -674,7 +669,6 @@ td {
 }
 
 .div-about-us-3 .team {
-    /* background-color: #0084ff; */
     margin-top: 100px;
 }
 
