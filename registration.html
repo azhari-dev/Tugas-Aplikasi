@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WPC adalah kompetisi polo air bergengsi yang ada di Indonesia">
-    <title>Registration</title>
+    <title>TUGAS APLIKASI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,10 +19,10 @@
         </div>
         <!-- menu navbar kanan -->
         <div class="nav2">
-            <a href="index.html">Beranda</a>
-            <a href="#">Registrasi</a>
-            <a href="evaluation.html">Evaluasi</a>
-            <a href="about-us.html">Tentang Kami</a>
+            <a href="index.html" class="other-page">Beranda</a>
+            <a href="#" class="now-page">Registrasi</a>
+            <a href="evaluation.html" class="other-page">Evaluasi</a>
+            <a href="about-us.html" class="other-page">Tentang Kami</a>
         </div>
     </div>
     <!-- menu end -->
@@ -84,12 +84,11 @@
                     <!-- kolom 2 (no. Whatsapp) -->
                     <div class="each-column">
                         <label for="wa">No. Whatsapp :</label>
-                        <input class="input" type="text" name="wa" id="wa" placeholder="087799953537">
-                        <!-- <div class="no">
+                        <div class="nomor">
                             <span>+62</span>
-                            <input class="input" type="text" name="wa" id="wa" placeholder="087799953537">
-                        </div> -->
-                        <div class="textError"></div>
+                            <input class="input" type="text" name="wa" id="wa" placeholder="87799953537">
+                            <div class="textError"></div>
+                        </div>
                     </div>
                 </div>
                 <!-- baris 3 (jenis kelamin & kategori) -->
@@ -114,20 +113,23 @@
                     <!-- kolom 2 (kategori) -->
                     <div class="each-column">
                         <label for="kategori">Kategori :</label>
-                        <select class="input" name="kategori" id="kategori">
-                            <option value="umum">Umum</option>
-                            <option value="sd">SD</option>
-                            <option value="smp">SMP</option>
-                            <option value="sma">SMA</option>
-                        </select>
+                        <input list="categories" name="kategori" id="kategori" class="input"
+                            placeholder="Umum/SD/SMP/SMA">
+                        <datalist id="categories">
+                            <option value="Umum">
+                            <option value="SD">
+                            <option value="SMP">
+                            <option value="SMA">
+                        </datalist>
+                        <div class="textError"></div>
                     </div>
                 </div>
-                <!-- baris 4 (kolom pertanyaan) -->
+                <!-- baris 4 (kolom alamat) -->
                 <div class="row">
                     <div class="each-column">
-                        <label for="qna">Ada Pertanyaan?</label>
-                        <textarea name="qna" id="qna" placeholder="Masukkan pertanyaan anda disini!!!"
-                            rows="4"></textarea>
+                        <label for="alamat">Alamat Instansi</label>
+                        <textarea name="alamat" id="alamat" placeholder="Masukkan alamat disini!!!" rows="3"></textarea>
+                        <div class="textError"></div>
                     </div>
                 </div>
                 <!-- baris 5 (persetujuan) -->
@@ -135,7 +137,7 @@
                     <div class="each-column">
                         <div class="valid-column" id="setuju">
                             <label for="persetujuan">Pastikan anda telah membaca dan menyetujui
-                                <a href="index.html#informasi-lomba" target="blank">persyaratan</a>
+                                <a href="index.html#informasi-lomba" target="_blank">persyaratan</a>
                                 lomba kami
                             </label>
                             <input type="checkbox" name="persetujuan" id="persetujuan">
