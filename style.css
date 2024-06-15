@@ -363,21 +363,26 @@ h3 {
 /* KONTEN INDRA END */
 
 /*KONTEN AZHARI START  */
+/* konten form */
 form {
     display: flex;
     flex-direction: column;
+    /* default dari display flex adalah flex-direction: row; jadi defaultnya kalau dikasih display flex maka akan sejajar kanan kiri, dibuat column agar sejajar atas bawah */
     width: 65%;
     margin-top: 20px;
 }
 
+/* h2 yang ada didalam element section */
 section h2 {
     font-size: 24px;
 }
 
+/* per baris dari setiap isian form */
 .row {
     display: flex;
 }
 
+/* per kolom dari setiap isian form */
 .each-column {
     width: 100%;
     display: flex;
@@ -385,6 +390,7 @@ section h2 {
     padding-right: 25px;
 }
 
+/* inputan */
 .input {
     background-color: #71D5E4;
     height: 35px;
@@ -393,11 +399,13 @@ section h2 {
     border: 2px solid #E4F4F3;
 }
 
+/* menghilangkan default border color hitam ketika mengetik di dalam inputan */
 .each-column input:focus,
 textarea {
     outline: 0;
 }
 
+/* border inputan akan berubah warna biru ketika terdapat class success */
 .success input,
 .success textarea,
 .success .fill-dif-column,
@@ -405,7 +413,7 @@ textarea {
     border-color: #0084ff;
 }
 
-/* text errror */
+/* border inputan akan berubah warna merah ketika terdapat class error */
 .error input,
 .error textarea,
 .error .fill-dif-column,
@@ -413,6 +421,7 @@ textarea {
     border-color: red;
 }
 
+/* teks error */
 .textError {
     display: flex;
     height: 13px;
@@ -423,11 +432,13 @@ textarea {
     margin-bottom: 2px;
 }
 
+/* logo warning */
 .textError img {
     width: 12px;
     margin-right: 5px;
 }
 
+/* font-weight untuk menebalkan text, semakin tinggi maka akan semakin tebal */
 label {
     font-weight: 500;
 }
@@ -437,9 +448,9 @@ textarea {
     border-radius: 10px;
     padding: 10px 15px;
     border: 2px solid #E4F4F3;
-    /* border: none; */
 }
 
+/* tombol button */
 .each-column button {
     padding: 10px;
     width: 33%;
@@ -451,11 +462,13 @@ textarea {
     color: #E4F4F3;
 }
 
+/* saat mouse mengarahkan pada element tombol yang ada didalam class each-column maka warna dan cursor akan berubah*/
 .each-column button:hover {
     background-color: #22a3a8;
     cursor: pointer;
 }
 
+/* membungkus konten gender */
 .dif-column {
     display: flex;
     justify-content: space-between;
@@ -466,6 +479,7 @@ textarea {
     width: 100%;
 }
 
+/* membungkus label dan inputan gender  */
 .fill-dif-column {
     background-color: #71D5E4;
     width: 30%;
@@ -476,6 +490,7 @@ textarea {
     border: 2px solid #E4F4F3;
 }
 
+/* membungkus pada bagian label persetujuan */
 .valid-column {
     background-color: #71D5E4;
     padding: 10px;
@@ -488,6 +503,7 @@ textarea {
     border: 2px solid #E4F4F3;
 }
 
+/* tag a yang ada didalam class valid-column */
 .valid-column a {
     font-weight: 650;
     color: rgb(47, 47, 255);
@@ -496,7 +512,6 @@ textarea {
 .row-valid {
     margin: 10px 0;
 }
-
 
 .nomor input {
     width: 91%;
