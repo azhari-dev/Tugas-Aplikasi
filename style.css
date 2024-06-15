@@ -525,9 +525,8 @@ textarea {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px 20px 70px;
 }
-
 .menengah_h1 {
     text-align: center;
 }
