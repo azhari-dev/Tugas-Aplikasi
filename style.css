@@ -521,7 +521,7 @@ textarea {
 
 /* KONTEN MUMTAZ START */
 
-/*Mengatur isi dari content*/
+/*Membungkus isi dari content*/
 .container {
     width: 80%;
     margin: 0 auto;
@@ -539,7 +539,7 @@ textarea {
     margin-top: 20px;
 }
 
-/*Untuk border pada table*/
+/*Untuk memberi border pada table*/
 .garis {
     border: 1px solid #ddd;
 }
@@ -552,26 +552,27 @@ td {
     text-align: left;
 }
 
+/* Memberi warna pada table header */
 .warna_th {
     background-color: #71D5E4;
 }
 
-/*Untuk menghilangkan simbol pada list*/
-.list_hilang {
-    list-style: none;
+/*Untuk memberi style pada list*/
+.list_style {
+    list-style: disc;
+    padding-left: 10px;
 }
 
+/* Untuk memberi warna pada isi dari kesesuaian dan garis */
 .yes {
     color: green;
     border: 1px solid #ddd;
     text-align: center;
 }
-
 .no {
     color: red;
     border: 1px solid #ddd;
 }
-
 /* KONTEN MUMTAZ END */
 
 /* KONTEN RIZAL START */
