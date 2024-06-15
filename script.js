@@ -191,7 +191,7 @@ form.addEventListener('submit', function (e) {
         setError(alamat, kosong);
         countError += 1
     } else if (numCheck(number, alpha, alamatValue)) { // jika inputan alamat tidak mengandung angka/numerik
-        setError(alamat, 'Masukan setidaknya mengandung 1 angka');
+        setError(alamat, 'Masukan alamat dengan lengkap');
         countError += 1
     } else {
         setSuccess(alamat)
