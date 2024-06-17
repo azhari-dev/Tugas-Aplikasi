@@ -44,7 +44,7 @@ const numCheck = function (number, alpha, elementValue) {
     let temp = 0
     // perulangan untuk mengecek apakah value pada element berupa angka atau tidak
     for (let j = 0; j < elementValue.length; j++) {
-        if (alpha.includes(elementValue[j])) {
+        if (alpha.includes(elementValue[j]) || (elementValue[j] == " ")) {
             temp += 1
             // variable temp akan di increment jika elementValue pada indeks ke-i berupa hurug
         }
@@ -160,7 +160,7 @@ form.addEventListener('submit', function (e) {
     } else if (numCheck(number, alpha, waValue) == 'only number') { // jika inputan no. wa terdapat karakter selain angka
         setSuccess(wa)
     } else {
-        setError(wa, 'Karakter harus berupa angka')
+        setError(wa, 'Karakter harus berupa angka''Pastikan karakter berupa angka dan tidak mengandung spasi')
         countError += 1
     }
 
