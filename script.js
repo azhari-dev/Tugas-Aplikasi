@@ -160,7 +160,7 @@ form.addEventListener('submit', function (e) {
     } else if (numCheck(number, alpha, waValue) == 'only number') { // jika inputan no. wa terdapat karakter selain angka
         setSuccess(wa)
     } else {
-        setError(wa, 'Karakter harus berupa angka''Pastikan karakter berupa angka dan tidak mengandung spasi')
+        setError(wa, 'Pastikan karakter berupa angka dan tidak mengandung spasi')
         countError += 1
     }
 
